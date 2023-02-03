@@ -2,6 +2,7 @@ package com.hyphenate.chatdemo.section.base;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.hyphenate.easecallkit.EaseCallKit;
@@ -19,6 +20,7 @@ public abstract class BaseInitActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.e("tetetetete", "Activity:" + this);
         int layoutId = getLayoutId();
         if(layoutId != 0) {
             setContentView(layoutId);

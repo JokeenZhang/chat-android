@@ -295,11 +295,12 @@ public class LoginFragment extends BaseInitFragment implements View.OnClickListe
             return;
         }
         isClick = true;
-        if (DemoHelper.getInstance().getModel().isDeveloperMode()){
-            mFragmentViewModel.login(mUserName,mPwd,isTokenFlag);
-        }else {
-            mFragmentViewModel.loginFromAppServe(mUserName, mPwd);
-        }
+//        if (DemoHelper.getInstance().getModel().isDeveloperMode()){
+//            mFragmentViewModel.login(mUserName,mPwd,isTokenFlag);
+//        }else {
+//            mFragmentViewModel.loginFromAppServe(mUserName, mPwd);
+//        }
+        mFragmentViewModel.login(mUserName,mPwd,isTokenFlag);
     }
 
     @Override
